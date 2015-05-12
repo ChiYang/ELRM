@@ -1,0 +1,60 @@
+.dragEnter {
+	background-color: #5B5BFF;
+}
+.matrixName{
+	font-size:12px;
+	font-family: arial;
+	text-decoration:underline;
+	cursor:pointer;
+}
+#leftContainer{
+	position:absolute;
+	width: 200px;
+	left:0px; 
+	top:10px;
+	bottom:10px;
+	z-index:100;
+	background-color:white;
+	box-shadow: 0 15px 15px 0 rgba(0, 0, 0, 0.24);
+}
+#drop_zone{
+	border: 2px dashed #bbb;
+	width:176px; 
+	height:60px;
+	text-align:center;
+	font:18pt bold;
+	font-family:Patrick Hand SC, cursive;
+}
+#lists{
+	position:absolute;
+	left:0px;
+	right:10px;
+	top:100px;
+	bottom:0px;
+	width:176px;
+	text-align:left;
+	padding-left:5px;
+	overflow-x:hidden;
+	overflow-y:auto;
+	border-top:1px solid black;
+}
+#leftControlBar{
+	height:100%;
+	width:20px;
+	position:absolute;
+	right:0px;top:0px;bottom:0px;
+	background-color:#aaa;
+	cursor:pointer;
+}
+#controls{
+	font-family: arial;
+}
+.warning{
+	color:rgb(150,0,0);
+}
+.state{
+	color:#008000;
+}
+ol li{
+	font-weight: 600;
+}
