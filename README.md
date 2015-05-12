@@ -1,8 +1,9 @@
-Mining DNA Motif Features with ELRM for Inferring Binding Preferences of Transcription Factors
+Exploring comprehensive within-motif dependence of transcription factor binding in <i>Escherichia coli</i>
 ======
 ##Brief introduction
 The ELRM stands for the <u>**E**</u>lastic net regularized <u>**L**</u>ogistic <u>**R**</u>egression <u>**M**</u>odel. 
-This modeling approach is used for inferring transcription factor (TF) binding preferences. 
+This modeling approach is used to search within-motif dependence. With the within-motif dependence, 
+we aim to construct a concise and informative model to present a TF binding motif. 
 Two kinds of features are considered in the model and they are the single-base features and 
 association features. A single-base feature describe a nucleotide base occurred at a position 
 in a binding motifs and an association feature describe an association between two or 
