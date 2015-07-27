@@ -151,10 +151,10 @@ running the R scripts. The construction of the ELRM for PurR was used as a demo.
 	- In order to reproduce the models in the manuscript, please use the corresponding optimal λ in the Supplementary Table S1 as the `s` for each TF.
 
 ###5. Scan sequences with ELRM
-  - **Script**: `./src/ELRM_scanning.R`
+  - **Script**: `./src/ELRMscan.R`
   - **Usage**:  
-    For the linux-based or Mac OS, use `R CMD BATCH --vanilla --slave '--args [training matrix] [testing matrix] [output file] [α] [threshold] [s]' ./ELRM_scanning.R /dev/null`  
-    For the Windows OS, use `Rscript --vanilla --slave ./src/ELRM_scanning.R [training matrix] [testing matrix] [output file] [α] [threshold] [s]`
+    For the linux-based or Mac OS, use `R CMD BATCH --vanilla --slave '--args [training matrix] [testing matrix] [output file] [α] [threshold] [s]' ./ELRMscan.R /dev/null`  
+    For the Windows OS, use `Rscript --vanilla --slave ./src/ELRMscan.R [training matrix] [testing matrix] [output file] [α] [threshold] [s]`
   - **Description**: 
 		This script takes the file paths for the training and testing matrices which generate 
 		from the SequenceCoding.pl as the first two arguments. The third argument is the output 
@@ -172,11 +172,11 @@ running the R scripts. The construction of the ELRM for PurR was used as a demo.
   - **Example**: In the current folder,
     - For linux or mac users, type 
 	
-			R CMD BATCH --vanilla --slave '--args ./example/TrainSeq/PurR_training.matrix ./example/TestSeq/PurR_testing.matrix ./example/ELRMscan/PurR_results.txt 0.5 0.8 0.000146174818947755' ./src/ELRM_scanning.R /dev/null
+			R CMD BATCH --vanilla --slave '--args ./example/TrainSeq/PurR_training.matrix ./example/TestSeq/PurR_testing.matrix ./example/ELRMscan/PurR_results.txt 0.5 0.8 0.000146174818947755' ./src/ELRMscan.R /dev/null
 
     - For Windows users, 
 			
-			Rscript --vanilla --slave ./src/ELRM_scanning.R ./example/TrainSeq/PurR_training.matrix ./example/TestSeq/PurR_testing.matrix ./example/ELRMscan/PurR_results.txt 0.5 0.8 0.000146174818947755
+			Rscript --vanilla --slave ./src/ELRMscan.R ./example/TrainSeq/PurR_training.matrix ./example/TestSeq/PurR_testing.matrix ./example/ELRMscan/PurR_results.txt 0.5 0.8 0.000146174818947755
 
 		Again, you might want to replace the `Rscript` with your Rscript path, if your Windows OS does not recognize the command.
 		
