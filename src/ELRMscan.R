@@ -1,10 +1,10 @@
-#Script ELRM_scanning.R
+#Script ELRMscan.R
 #Author: Chi Yang
 #Date: 2014/11/13
 #License: MIT licence
 library(glmnet);
 args <- commandArgs(trailingOnly = TRUE);
-#R CMD BATCH --vanilla --slave '--args ../example/TrainSeq/PurR_training.matrix ../example/TestSeq/PurR_testing.matrix ../example/ScanningResults/PurR_results.txt 0.5 0.8' ./ELRM_scanning.R /dev/null";
+#R CMD BATCH --vanilla --slave '--args ../example/TrainSeq/PurR_training.matrix ../example/TestSeq/PurR_testing.matrix ../example/ScanningResults/PurR_results.txt 0.5 0.8' ./ELRMscan.R /dev/null";
 trainingFile = args[1];
 testingFile = args[2];
 outputFile = args[3];
