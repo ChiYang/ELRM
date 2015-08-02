@@ -197,7 +197,7 @@ running the R scripts. The construction of the ELRM for PurR was used as a demo.
   - **Description**: 
 	We used the HTML5 canvas to draw the graphical representation of ELRM. This interactive tool allows you to view the model intuitively and quickly test a sequence to see the response probability and features used.
 		
-####7. Outputs for Cytoscape
+###7. Outputs for Cytoscape
   - **Script**:`./src/ConvertELRMtoCytoscape.pl`
   - **Usage**: `perl ConvertELRMtoCytoscape.pl [ELRM file path] [Output file path 1] [Output file path 2]`
   - **Description**: This script converts the ELRM model (form Step 4) to two files for visualization with Cytoscape. Cytoscape is an open source platform for visualization of networks (see the <a href='http://www.cytoscape.org/'>Cytoscape official site</a> for more information).
