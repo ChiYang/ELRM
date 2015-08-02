@@ -68,7 +68,6 @@ foreach $af (sort{sortFuncForOutput}(%AssociationFeatures)){
 }
 close(OUTPUT);
 
-exit;
 open(OUTPUT, ">$outputFilePath2");
 print OUTPUT "SingleBaseFeatures\tCoefficients\n";
 foreach $sf (sort {sortFuncForOutput} (%SingleBaseFeatures)){
